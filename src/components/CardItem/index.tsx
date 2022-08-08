@@ -1,6 +1,5 @@
 import React from 'react'
 import { ICard } from 'types'
-import { randomValue } from 'utils'
 interface ICardItem {
   card: ICard
 }
@@ -13,7 +12,7 @@ export const CardItem = ({ card }: ICardItem) => {
 
     <S.Wrapper>
       <S.NameCard> {cardName} </S.NameCard>
-      <S.Image src={card.image} title={cardName} />
+      <S.Image src={card.image} title={cardName} loading='lazy' />
       <S.NameCard>{card?.point} Points </S.NameCard>
 
       
