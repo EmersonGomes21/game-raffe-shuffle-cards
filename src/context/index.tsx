@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useEffect, useState } from "react";
-import { apiCards } from "../../services/api";
-import { ICard, IContext } from "../../types";
-import { randomValue } from "../../utils";
+import { apiCards } from "../services/api";
+import { ICard, IContext } from "../types";
+import { randomValue } from "../utils";
 
 export const UserContext = createContext({} as IContext);
 

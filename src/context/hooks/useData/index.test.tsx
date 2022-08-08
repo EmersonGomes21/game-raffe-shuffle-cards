@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import { ProviderDataPlayer } from '../context';
+import { ProviderDataPlayer } from '../..';
 import { useData } from '.';
-import { mockCards } from '../../__MOCKS__/cards';
+import { mockCards } from '../../../__MOCKS__/cards';
 describe('<useData/>', () => {
   beforeEach(() => {
     jest.clearAllMocks();
@@ -120,7 +120,7 @@ describe('<useData/>', () => {
     
   })
 
-  it('should not  cards = [] , playerName = ""  and addNextCard = 5, in logout', () => {
+  it('should not  cards = 5 items is default , playerName = "" , in logout', () => {
     const wrapper = ({ children }: any) => (
       <ProviderDataPlayer>{children}</ProviderDataPlayer>
     );
@@ -140,10 +140,8 @@ describe('<useData/>', () => {
 
     
     const itemsInitialPagination = 5
-    const remnantCards = 3
 
     expect(result.current.cards.length).toEqual(itemsInitialPagination);
-    expect(result.current.remnantCards).toEqual(remnantCards);
     expect(result.current.playerName).toEqual('');
         
   })

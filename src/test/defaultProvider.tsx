@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { ProviderDataPlayer } from 'hooks/context';
+import { ProviderDataPlayer } from 'context';
 
 export function renderWithClient(ui: React.ReactElement) {
     const { rerender, ...result } = render(

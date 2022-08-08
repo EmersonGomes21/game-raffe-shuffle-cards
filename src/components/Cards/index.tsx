@@ -1,6 +1,6 @@
 import { CardItem } from 'components/CardItem'
 import { LoaderAnimated } from 'components/LoaderAnimated'
-import { useData } from 'hooks/useData'
+import { useData } from 'context/hooks/useData'
 import React, { useEffect, useState } from 'react'
 import * as S from './styles'
 

@@ -1,7 +1,7 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import { ICardsData, ICard } from "types";
 
-import { UserContext } from "../context";
+import { UserContext } from "../..";
 
 export const useData = (): ICardsData => {
 
@@ -50,6 +50,7 @@ export const useData = (): ICardsData => {
     const remnantCards = cards?.length - paginationData?.length
 
     const logout = useCallback(() => {
+        setDataCards([])
         setPlayerName('')
         setAddNextCard(5)
     }, [])

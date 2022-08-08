@@ -1,4 +1,4 @@
-import { useData } from 'hooks/useData'
+import { useData } from 'context/hooks/useData'
 import React from 'react'
 import * as S from './styles'
 

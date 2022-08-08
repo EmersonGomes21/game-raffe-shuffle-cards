@@ -1,5 +1,5 @@
 import { MainLayout } from 'components/MainLayout'
-import { ProviderDataPlayer } from 'hooks/context'
+import { ProviderDataPlayer } from 'context'
 
 export default function Home() {
   return (
