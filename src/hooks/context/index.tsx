@@ -21,6 +21,9 @@ export const ProviderDataPlayer: React.FC = ({ children }) => {
                 }
             })  || []
             setDataCards(cardsWithPoint)
+        }).catch((Error) => {
+            console.error('Error', Error)
+
         })
     }, [cards])
 
