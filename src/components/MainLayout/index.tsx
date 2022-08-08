@@ -7,9 +7,7 @@ import React from 'react'
 
 import * as S from './styles'
 
-const MainLayout = ({
-
-}) => {
+const MainLayout = () => {
   const { playerName } = useData()
   return (
     <S.Wrapper>
