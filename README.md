@@ -15,6 +15,7 @@ This project uses lot of stuff as:
 - [Formik](https://formik.org/docs/overview)
 - [Context API / React Hooks](https://pt-br.reactjs.org/docs/context.html)
 - [Axios](https://axios-http.com/docs/intro)
+- [Lottie](https://www.npmjs.com/package/lottie-react-web)
 
 ## Getting Started
 
