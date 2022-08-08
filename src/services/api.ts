@@ -12,11 +12,8 @@ const api = axios.create({
 export const apiCards = {
     getCards: async (count = 8) => {
         try {
-            const resp: IData = await api.get(`/new/draw/?count=${count}`)
-            console.log({ resp })
-
-            return resp.data
-
+            const {data}: IData = await api.get(`/new/draw/?count=${count}`)
+            return data
         } catch (error) {
             console.error('Error in getCards', error)
         }
