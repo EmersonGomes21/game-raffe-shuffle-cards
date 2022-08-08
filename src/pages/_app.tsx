@@ -6,15 +6,10 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Jogo de cartas</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
-        <link rel="manifest" href="manifest.json" />
-
-        <meta
-          name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
-        />
+        <title>Shuffle Cards</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="https://deckofcardsapi.com/static/img/favicon/apple-touch-icon-57x57.png" />
+        <link rel="icon" type="image/png" href="https://deckofcardsapi.com/static/img/favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="shortcut icon" href="https://deckofcardsapi.com/static/img/favicon/favicon.ico" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
