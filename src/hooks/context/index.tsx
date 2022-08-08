@@ -25,7 +25,7 @@ export const ProviderDataPlayer: React.FC = ({ children }) => {
             console.error('Error', Error)
 
         })
-    }, [])
+    }, [cards])
 
     return (
         <UserContext.Provider value={{
