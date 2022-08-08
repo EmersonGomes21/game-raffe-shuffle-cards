@@ -3,7 +3,7 @@ import axios from 'axios';
 import { IData } from 'types';
 
 const api = axios.create({
-    baseURL: 'http://deckofcardsapi.com/api/deck',
+    baseURL: 'https://deckofcardsapi.com/api/deck',
     xsrfCookieName: "XSRF-TOKEN",
     xsrfHeaderName: "X-XSRF-TOKEN",
     withCredentials: false
