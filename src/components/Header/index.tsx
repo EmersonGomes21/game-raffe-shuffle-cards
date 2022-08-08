@@ -1,4 +1,3 @@
-import { Button } from 'components/AddPlayer/styles'
 import { useData } from 'hooks/useData'
 import React from 'react'
 import * as S from './styles'
