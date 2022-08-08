@@ -4,8 +4,7 @@ import React from 'react'
 import * as S from './styles'
 
 export const Header = () => {
-  const { logout, playerName , remnantCards } = useData()
-
+  const { logout, playerName, remnantCards } = useData()
   return (
     <S.Wrapper>
       {playerName && (
