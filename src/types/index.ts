@@ -4,6 +4,7 @@ export interface ICard {
     images: Images;
     value: string;
     suit: string;
+    point: number
 }
 
 export interface Images {
