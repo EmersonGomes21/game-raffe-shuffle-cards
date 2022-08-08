@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useEffect, useState } from "react";
-import { apiCards,  } from "services/api";
-import { ICard, IContext } from "types";
-import { randomValue } from "utils";
+import { apiCards } from "../services/api";
+import { ICard, IContext } from "../types";
+import { randomValue } from "../utils";
 
 export const UserContext = createContext({} as IContext);
 
@@ -13,7 +13,7 @@ export const ProviderDataPlayer: React.FC = ({ children }) => {
 
     useEffect(() => {
         if (cards?.length > 0) return
-        apiCards.getCards(countCards).then((result) => {
+     apiCards.getCards(countCards).then((result) => {
             const cardsWithPoint = result?.cards?.map((card) => {
                 return {
                     ...card,

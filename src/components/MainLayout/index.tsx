@@ -2,7 +2,7 @@ import { AddPlayer } from 'components/AddPlayer'
 import { Cards } from 'components/Cards'
 import { FooterButtons } from 'components/FooterButtons'
 import { Header } from 'components/Header'
-import { useData } from 'hooks/useData'
+import { useData } from '../../context/hooks/useData'
 import React from 'react'
 
 import * as S from './styles'
